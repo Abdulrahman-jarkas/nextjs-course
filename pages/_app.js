@@ -1,0 +1,20 @@
+import Layout from "../components/layout/layout";
+import "../styles/globals.css";
+import Head from "next/head";
+
+function MyApp({ Component, pageProps }) {
+  return (
+    <Layout>
+      <Head>
+        {/* General Meta Data */}
+        <meta
+          name="viewport"
+          content="width=device-width, initial-scale=1"
+        ></meta>
+      </Head>
+      <Component {...pageProps} />
+    </Layout>
+  );
+}
+
+export default MyApp;
